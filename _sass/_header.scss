@@ -1,6 +1,10 @@
 header {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 1em;
+
+  @include media(em(600)) {
+    margin-top: 5em;
+  }
 
   h1 {
     font-size: 1em;

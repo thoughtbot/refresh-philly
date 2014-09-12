@@ -1,13 +1,14 @@
 footer {
-  margin: 3em 0;
+  margin: 3em 0 8em;
   text-align: center;
 
   nav {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 
     li {
       display: inline-block;
       margin-right: 1em;
+      margin-bottom: 1em;
 
       a {
         width: em(148);
@@ -24,6 +25,8 @@ footer {
   }
 
   p {
+    color: rgba(white, 0.7);
+
     a {
       color: white;
 

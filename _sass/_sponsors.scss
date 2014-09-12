@@ -18,8 +18,12 @@
         margin-right: 1em;
 
         a {
-          @include size(em(211) em(149));
+          @include size(em(438) em(149));
           background-image: url("/images/drexel.svg");
+
+          @include media(em(630)){
+            margin-left: -70px;
+          }
         }
       }
 
@@ -31,13 +35,15 @@
       }
 
       a {
+        @include transition;
         @include hide-text();
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
 
         &:hover {
-          opacity: 0.5;
+          @include transition;
+          opacity: 0.7;
         }
       }
     }

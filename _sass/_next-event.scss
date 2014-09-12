@@ -1,12 +1,20 @@
 .next-event {
   @include outer-container;
 
-  .speaker-image {
-    @include span-columns(6);
+  .speaker-image,
+  .talk-info {
+    max-width: em(480);
+    margin: 0 auto;
+
+    @include media(em(850)) {
+      @include span-columns(6);
+    }
   }
 
-  .talk-info {
-    @include span-columns(6);
+  .speaker-image {
+    @include media(max-width em(850)) {
+      margin-bottom: 2em;
+    }
   }
 
   h1 {
@@ -14,19 +22,79 @@
     font-size: 1em;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   h2 {
     font-size: em(24);
   }
 
+  h3 {
+    font-size: em(18);
+
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 1em;
+  }
+
   .description {
     color: rgba(white, 0.7);
+    margin-bottom: 2em;
   }
 
   .event-details {
     margin-bottom: 2em;
+  }
+
+  .speaker {
+    margin-bottom: 2em;
+    color: rgba(white, 0.7);
+
+    a {
+      color: white;
+
+      &:hover {
+        color: rgba(white, 0.7);
+      }
+    }
+
+    h3 a {
+      color: $refresh-blue;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .date {
+    background-image: url("/images/date.svg");
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    background-size: auto 1em;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    color: rgba(white, 0.7);
+  }
+
+  .location {
+    background-image: url("/images/location.svg");
+    background-position: left 2px;
+    background-repeat: no-repeat;
+    background-size: auto 1em;
+    padding-left: 2em;
+    display: block;
+    color: rgba(white, 0.7);
+
+    &:hover {
+      color: white;
+    }
+
+    span {
+      display: block;
+    }
   }
 
   .register {

@@ -3,11 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-<g id="Linkedin_1">
-	<rect y="253.2" fill="#FFFFFF" width="122.4" height="448.8"/>
-	<path fill="#FFFFFF" d="M448.8,253.2c-77.5,0-106.1,40.8-122.4,81.6v-81.6H204c0,40.8,0,448.8,0,448.8h122.4V465.4
-		c0-12.2,0-24.5,4.1-32.6c8.2-24.5,40.8-53,81.6-53c49-4.1,77.5,36.7,77.5,93.8V702H612V457.2C612,326.6,542.6,253.2,448.8,253.2z"
-		/>
-	<circle fill="#FFFFFF" cx="61.2" cy="151.2" r="61.2"/>
-</g>
+<path id="Location_Pin_1" fill="#FFFFFF" d="M308.5,0C140.2,0,6.5,133.7,6.5,301.9c0,212.9,217.8,425.7,282.1,485.1
+	c9.9,9.9,29.7,9.9,39.6,0c64.4-59.4,282.1-272.2,282.1-485.1C605.5,133.7,471.8,0,308.5,0z M308.5,445.5
+	C224.3,445.5,160,381.1,160,297s64.3-148.5,148.5-148.5S457,212.9,457,297S387.7,445.5,308.5,445.5z"/>
 </svg>

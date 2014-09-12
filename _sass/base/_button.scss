@@ -1,4 +1,5 @@
 %primary-button {
+  @include transition(all 0.2s linear);
   border-radius: $base-border-radius;
   color: $refresh-orange;
   border: 3px solid $refresh-orange;
@@ -10,6 +11,7 @@
   text-decoration: none;
 
   &:hover {
+    @include transition(all 0.2s linear);
     color: $refresh-dark-blue;
     background-color: lighten($refresh-orange, 10);
     border: 3px solid lighten($refresh-orange, 10);
@@ -17,6 +19,7 @@
 }
 
 %secondary-button {
+  @include transition(all 0.2s linear);
   border-radius: $base-border-radius;
   color: $refresh-blue;
   border: 3px solid $refresh-blue;
@@ -28,6 +31,7 @@
   text-decoration: none;
 
   &:hover {
+    @include transition(all 0.2s linear);
     color: $refresh-dark-blue;
     background-color: lighten($refresh-blue, 10);
     border: 3px solid lighten($refresh-blue, 10);

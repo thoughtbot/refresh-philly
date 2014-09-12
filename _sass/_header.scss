@@ -10,7 +10,7 @@ header {
       margin-bottom: 2em;
 
       path {
-        fill: white;
+        fill: $refresh-blue;
       }
     }
 
@@ -25,25 +25,37 @@ header {
   }
 
   nav {
+    margin-top: 2em;
+
     li {
       display: inline-block;
     }
 
     a {
+      @include transition;
       @include hide-text();
-      @include size(em(25));
+      @include size(em(24));
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       display: block;
+      margin-right: 1em;
+
+      &:hover {
+        @include transition;
+        opacity: 0.6;
+      }
 
       &.twitter {
-
+        background-image: url("/images/twitter.svg");
       }
 
       &.linked-in {
-
+        background-image: url("/images/linkedin.svg");
       }
 
       &.flickr {
-
+        background-image: url("/images/flickr.svg");
       }
     }
   }

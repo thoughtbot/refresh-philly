@@ -11,7 +11,7 @@ body {
     @include filter(blur(3px));
     @include position(fixed, 0px 0px 0px 0px);
     background-attachment: fixed;
-    background-image: url("/images/declaration-independence.jpg");
+    background-image: url("../images/declaration-independence.jpg");
     background-position: center center;
     background-size: cover;
     content: "";

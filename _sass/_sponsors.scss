@@ -19,7 +19,7 @@
 
         a {
           @include size(em(438) em(149));
-          background-image: url("/images/drexel.svg");
+          background-image: url("../images/drexel.svg");
 
           @include media(em(630)){
             margin-left: -70px;
@@ -30,7 +30,7 @@
       &.thoughtbot {
         a {
           @include size(em(156));
-          background-image: url("/images/thoughtbot.svg");
+          background-image: url("../images/thoughtbot.svg");
         }
       }
 

@@ -5,33 +5,42 @@ footer {
   nav {
     margin-bottom: 1em;
 
-    li {
-      display: inline-block;
-      margin-right: 1em;
-      margin-bottom: 1em;
+    a {
+      &.register {
+        @extend %primary-button;
+        margin-bottom: 1em;
+      }
 
-      a {
-        width: em(148);
+      &:not(.register) {
+        @extend %secondary-button;
+        display: inline-block;
+        margin-right: 0.25em;
 
-        &.register {
-          @extend %primary-button;
-        }
-
-        &:not(.register) {
-          @extend %secondary-button;
+        @include media(max-width em(500)) {
+          margin-bottom: 0.5em;
         }
       }
     }
   }
 
-  p {
-    color: rgba(white, $base-opacity);
+  h2 {
+    font-size: em(14);
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 1em 0.5em 0.5em 0;
+    text-transform: uppercase;
 
+    @include media(em(500)) {
+      display: inline-block;
+    }
+  }
+
+  p {
     a {
-      color: white;
+      color: $refresh-tan;
 
       &:hover {
-        color: rgba(white, ($base-opacity - 0.2));
+        color: $refresh-blue;
       }
     }
   }

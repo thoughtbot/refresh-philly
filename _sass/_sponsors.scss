@@ -20,6 +20,7 @@
         a {
           @include size(em(300) em(149));
           background-image: url("../images/drexel.svg");
+
           @include media(em(550)) {
             @include size(em(438) em(149));
           }
@@ -38,15 +39,15 @@
       }
 
       a {
-        @include transition;
         @include hide-text();
+        @include transition;
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
 
         &:hover {
           @include transition;
-          opacity: 0.7;
+          opacity: $base-opacity;
         }
       }
     }

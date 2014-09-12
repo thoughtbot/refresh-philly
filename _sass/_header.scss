@@ -1,6 +1,6 @@
 header {
-  text-align: center;
   margin-top: 1em;
+  text-align: center;
 
   @include media(em(600)) {
     margin-top: 5em;
@@ -10,8 +10,8 @@ header {
     font-size: 1em;
 
     svg {
-      width: em(155);
       margin-bottom: 2em;
+      width: em(155);
 
       path {
         fill: $refresh-blue;
@@ -36,9 +36,9 @@ header {
     }
 
     a {
-      @include transition;
       @include hide-text();
       @include size(em(24));
+      @include transition;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;

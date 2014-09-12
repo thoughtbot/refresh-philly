@@ -9,6 +9,7 @@ $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
+$base-opacity: 0.8;
 
 // Colors
 $blue: #477DCA;
@@ -20,6 +21,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $refresh-orange: #f2912a;
 $refresh-blue: #67bee8;
+$refresh-tan: #c6c4be;
 $refresh-dark-blue: #243958;
 
 // Background Color

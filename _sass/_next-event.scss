@@ -1,0 +1,37 @@
+.next-event {
+  @include outer-container;
+
+  .speaker-image {
+    @include span-columns(6);
+  }
+
+  .talk-info {
+    @include span-columns(6);
+  }
+
+  h1 {
+    color: $refresh-blue;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: em(24);
+  }
+
+  .description {
+    color: rgba(white, 0.7);
+  }
+
+  .event-details {
+    margin-bottom: 2em;
+  }
+
+  .register {
+    @extend %primary-button;
+    text-align: center;
+    width: em(150);
+  }
+}

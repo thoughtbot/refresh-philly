@@ -1,0 +1,35 @@
+%primary-button {
+  border-radius: $base-border-radius;
+  color: $refresh-orange;
+  border: 3px solid $refresh-orange;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+
+  &:hover {
+    color: $refresh-dark-blue;
+    background-color: lighten($refresh-orange, 10);
+    border: 3px solid lighten($refresh-orange, 10);
+  }
+}
+
+%secondary-button {
+  border-radius: $base-border-radius;
+  color: $refresh-blue;
+  border: 3px solid $refresh-blue;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+
+  &:hover {
+    color: $refresh-dark-blue;
+    background-color: lighten($refresh-blue, 10);
+    border: 3px solid lighten($refresh-blue, 10);
+  }
+}

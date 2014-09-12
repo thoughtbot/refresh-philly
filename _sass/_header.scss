@@ -1,0 +1,50 @@
+header {
+  text-align: center;
+  margin-top: 3em;
+
+  h1 {
+    font-size: 1em;
+
+    svg {
+      width: em(155);
+      margin-bottom: 2em;
+
+      path {
+        fill: white;
+      }
+    }
+
+    strong {
+      display: none;
+    }
+  }
+
+  p {
+    max-width: em(380);
+    margin: 0 auto 0.5em;
+  }
+
+  nav {
+    li {
+      display: inline-block;
+    }
+
+    a {
+      @include hide-text();
+      @include size(em(25));
+      display: block;
+
+      &.twitter {
+
+      }
+
+      &.linked-in {
+
+      }
+
+      &.flickr {
+
+      }
+    }
+  }
+}

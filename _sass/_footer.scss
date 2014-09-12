@@ -1,0 +1,35 @@
+footer {
+  margin: 3em 0;
+  text-align: center;
+
+  nav {
+    margin-bottom: 2em;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+
+      a {
+        width: em(148);
+
+        &.register {
+          @extend %primary-button;
+        }
+
+        &:not(.register) {
+          @extend %secondary-button;
+        }
+      }
+    }
+  }
+
+  p {
+    a {
+      color: white;
+
+      &:hover {
+        color: rgba(white, 0.5);
+      }
+    }
+  }
+}

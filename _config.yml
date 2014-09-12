@@ -1,0 +1,10 @@
+name: Refresh Philly
+url: http://refreshphilly.org
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+exclude:
+- README
+- LICENSE

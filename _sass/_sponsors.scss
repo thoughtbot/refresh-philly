@@ -11,18 +11,21 @@
 
   ul {
     li {
-      display: inline-block;
       vertical-align: middle;
+      display: inline-block;
 
       &.drexel {
-        margin-right: 1em;
+        @include media(max-width em(550)) {
+          display: block;
+        }
 
         a {
-          @include size(em(300) em(149));
+          @include size(100% em(149));
           background-image: url("../images/drexel.svg");
 
           @include media(em(550)) {
             @include size(em(438) em(149));
+            margin-right: 1em;
           }
 
           @include media(em(630)){

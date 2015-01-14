@@ -17,6 +17,15 @@
     }
   }
 
+  .photo-attribute {
+    color: $refresh-tan;
+    margin-top: 0.5em;
+
+    a {
+      color: $refresh-tan;
+    }
+  }
+
   h1 {
     color: $refresh-blue;
     font-size: 1em;

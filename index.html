@@ -1,3 +1,30 @@
+---
+  month: April
+  date: 9th
+
+  speaker: Alex Hillman
+  speaker-twitter: alexhillman
+  speaker-photo: https://pbs.twimg.com/profile_images/568151215826280449/3ImoO_mn.jpeg
+  speaker-bio: |
+    Alex Hillman is the co-creator and co-teacher of 30x500, a class that he and
+    Amy Hoy run to help people just like the ones in the Refresh community
+    (designers, developers, writers, etc) how to build an audience and get more
+    people to care about the things you make.
+
+  title: How to stop making shit nobody cares about
+  description: |
+    Have you ever built something, launched it, and wondered...why
+    isn't anybody using it? If you had hopes of selling what you made, you
+    might've invested a lot of time and money only to learn that nobody's buying.
+    It seems like startups and CEOs get all the glory, with piles of someone
+    else's cash giving them the time to figure out a "product market fit". You're
+    a maker, without all of the flash and resources.
+    Can you get more people to use the things you make – and maybe even buy them
+    – without "growth hacking" or other slimy sales tactics?
+
+  url: http://refreshphilly.ticketleap.com/20150409/
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -52,32 +79,31 @@
 
     <section class="next-event">
       <div class="speaker-image">
-        <img src="https://pbs.twimg.com/profile_images/478169490711003137/GGMfHmWs.jpeg" alt="Phil Charron" />
+        <img src="{{ page.speaker-photo }}" alt="{{ page.speaker }}" />
       </div>
 
       <div class="talk-info">
-        <h1>March Meeting</h1>
-        <h2 class="talk-title"><a href="http://refreshphilly.ticketleap.com/20150312">Storytelling with Data</a></h2>
+        <h1>{{ page.month }} Meeting</h1>
+        <h2 class="talk-title"><a href="">{{ page.title }}</a></h2>
         <div class="description">
-          <p>How do I keep my audience engaged while I'm throwing huge piles of information at them? Storytelling is an art form and a science that has been practiced throughout human history. The core principles of storytelling haven't changed, but people forget about the basic principles of character, time and setting when they're preparing to present large amounts of information.</p>
+          <p>{{ page.description }}</p>
           <p>Come early for some food and refreshments sponsored by <a href="http://thoughtbot.com">thoughtbot</a>.</p>
         </div>
 
         <div class="speaker">
-          <h3><a href="//twitter.com/pfilbert">Phil Charron</a></h3>
-          <p>UX Strategist &amp; Consultant at <a href="http://">Think Brownstone</a></p>
+          <h3><a href="//twitter.com/{{ page.speaker-twitter }}">{{ page.speaker }}</a></h3>
+          <p>{{ page.speaker-bio }}</p>
         </div>
 
         <div class="event-details">
-          <h4 class="date">Thursday, February 12th @ 6:30pm</h4>
+          <h4 class="date">Thursday, {{ page.month }} {{ page.date }} @ 6:30pm</h4>
           <a href="https://goo.gl/maps/pJWi2" class="location">
             URBN Center Annex,
             <span>3527 Filbert St, Philadelphia</span>
           </a>
         </div>
 
-
-        <a href="http://refreshphilly.ticketleap.com/20150312" class="register">Register</a>
+        <a href="{{ page.url }}" class="register">Register</a>
       </div>
     </section>
 
@@ -101,7 +127,7 @@
 
     <footer>
       <nav>
-        <a href="//refreshphilly.ticketleap.com/20150312/" class="register">Register For Our Next Event</a>
+        <a href="{{ page.url }}" class="register">Register For Our Next Event</a>
 
         <div class="contact">
           <h2>Email us to:</h2>

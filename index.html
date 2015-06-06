@@ -1,25 +1,21 @@
 ---
-  month: May
-  date: 14th
-  event-url: "http://refreshphilly.ticketleap.com/20150514/"
-  speaker: 
-  speaker-twitter: gary_hustwit
-  speaker-photo: https://upload.wikimedia.org/wikipedia/en/d/d4/Helvetica-film.JPG
-  speaker-bio: |
-  title: Helvetica
+  month: July
+  date: 9th
+  event-url: "http://refreshphilly.ticketleap.com/20150709/"
+  speaker: Geoff DiMasi
+  speaker-twitter: geoffd
+  speaker-photo: https://pbs.twimg.com/profile_images/1517277930/3963654484_287915ef99.jpg
+  speaker-bio: Principle &amp; Stratagy at <a href="http://punkave.com/">P'unk Ave</a>. Co-Founder of <a href="http://indyhall.org/">Indy Hall</a>. Curator of <a href="http://ignitephilly.org/">Ignite Philly</a>.
+  title: "Always Be Human: A Talk on P'unk Ave's Journey Towards a Better Company Culture"
   description: |
-    Helvetica is an independent feature-length documentary film about typography
-    and graphic design, centered on the typeface of the same name. Directed by
-    Gary Hustwit, it was released in 2007 to coincide with the 50th anniversary
-    of the typeface's introduction in 1957 and is considered the first of the
-    Design Trilogy by the director.
+    If you were responsible for creating the ideal company culture, what would you
+    do? 
 
-    Helvetica consists of a history of the typeface interspersed with candid
-    interviews with leading graphic and type designers. The film aims to show
-    Helvetica's beauty and ubiquity, and illuminate the personalities that are
-    behind typefaces. It also explores the rift between modernists and
-    postmodernists, with the latter expressing and explaining their criticisms
-    of the famous typeface.
+    Running a company gives you that opportunity, but it also gives you the
+    opportunity to screw it up royally. Geoff DiMasi will talk about the things
+    that P'unk Ave has learned along the way to create a culture built around the
+    idea of creating a company where people would actually want to work!
+
 ---
 
 <!DOCTYPE html>
@@ -75,26 +71,26 @@
     <hr />
 
     <section class="next-event">
-      <div class="speaker-image">
+      <div class="event--speaker-image">
         <img src="{{ page.speaker-photo }}" alt="{{ page.speaker }}" />
       </div>
 
       <div class="talk-info">
-        <h1>{{ page.month }} Meeting</h1>
-        <h2 class="talk-title"><a href="">{{ page.title }}</a></h2>
-        <div class="description">
+        <h1 class="title--primary">{{ page.month }} Meeting</h1>
+        <h2 class="event--title"><a href="{{page.event-url}}">{{ page.title }}</a></h2>
+        <div class="event--description">
           <p>{{ page.description }}</p>
           <p>Come early for some food and refreshments sponsored by <a href="http://thoughtbot.com">thoughtbot</a>.</p>
         </div>
 
-        <div class="speaker">
-          <h3><a href="//twitter.com/{{ page.speaker-twitter }}">{{ page.speaker }}</a></h3>
+        <div class="event--speaker">
+          <h3 class="event--speaker-name"><a href="//twitter.com/{{ page.speaker-twitter }}">{{ page.speaker }}</a></h3>
           <p>{{ page.speaker-bio }}</p>
         </div>
 
-        <div class="event-details">
-          <h4 class="date">Thursday, {{ page.month }} {{ page.date }} @ 6:30pm</h4>
-          <a href="https://goo.gl/maps/pJWi2" class="location">
+        <div class="event--details">
+          <h4 class="event--date">Thursday, {{ page.month }} {{ page.date }} @ 6:30pm</h4>
+          <a href="https://goo.gl/maps/pJWi2" class="event--location">
             URBN Center Annex,
             <span>3527 Filbert St, Philadelphia</span>
           </a>
@@ -106,8 +102,44 @@
 
     <hr />
 
+    <section class="next-up">
+      <h1 class="title--primary">Coming soon</h1>
+
+      <ol>
+        <li class="next-up--event">
+          <h2 class="event--date">August 13th</h2>
+          <img src="https://pbs.twimg.com/profile_images/553642297540481025/mmuKgSC5.jpeg" alt="" />
+          <h3 class="event--speaker-name"><a href="https://twitter.com/rozduffy">Roz Duffy</a></h3>
+          <a href="http://refreshphilly.ticketleap.com/20150813/">Register</a>
+        </li>
+
+        <li class="next-up--event">
+          <h2 class="event--date">September 3rd</h2>
+          <img src="https://pbs.twimg.com/profile_images/595317859972042752/iJo9mzfl.jpg" alt="Mike Gadsby" />
+          <h3 class="event--speaker-name"><a href="http://twitter.com/gadsbyo3world">Mike Gadsby</a></h3>
+          <a href="http://refreshphilly.ticketleap.com/20150903/">Register</a>
+        </li>
+
+        <li class="next-up--event">
+          <h2 class="event--date">October 8th</h2>
+          <img src="https://pbs.twimg.com/profile_images/510070003748466688/HbmjyUqk.png" alt="" />
+          <h3 class="event--speaker-name"><a href="https://twitter.com/OperationNICE">Melissa Morris Ivone</a></h3>
+          <a href="http://refreshphilly.ticketleap.com/20151008/">Register</a>
+        </li>
+
+        <li class="next-up--event">
+          <h2 class="event--date">November</h2>
+          <div class="event--tbd-image">?</div>
+          <h3 class="event--speaker-name"><a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Speak at Refresh">TBD</a></h3>
+          <a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Speak at Refresh">Want to present?</a>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
     <section class="sponsors">
-      <h1>Sponsors</h1>
+      <h1 class="title--primary">Sponsors</h1>
 
       <ul>
         <li class="drexel">
@@ -128,8 +160,8 @@
 
         <div class="contact">
           <h2>Email us to:</h2>
-          <a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Speak at Refresh">Be a speaker</a>
-          <a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Sponsor Refresh">Be a sponsor</a>
+          <a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Speak at Refresh" class="contact--button">Be a speaker</a>
+          <a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Sponsor Refresh" class="contact--button">Be a sponsor</a>
         </div>
       </nav>
 

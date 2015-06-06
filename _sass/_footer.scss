@@ -6,20 +6,6 @@ footer {
     margin-bottom: 1em;
 
     a {
-      &.register {
-        @extend %primary-button;
-        margin-bottom: 1em;
-      }
-
-      &:not(.register) {
-        @extend %secondary-button;
-        display: inline-block;
-        margin-right: 0.25em;
-
-        @include media(max-width em(500)) {
-          margin-bottom: 0.5em;
-        }
-      }
     }
   }
 
@@ -44,4 +30,33 @@ footer {
       }
     }
   }
+}
+
+.contact {
+  margin-top: 1em;
+}
+
+.contact--button {
+  @include transition(all 0.2s linear);
+  border-radius: $base-border-radius;
+  color: $refresh-blue;
+  border: 3px solid $refresh-blue;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+
+  @include media(max-width em(500)) {
+    margin-bottom: 0.5em;
+  }
+
+  &:hover {
+    @include transition(all 0.2s linear);
+    color: $refresh-dark-blue;
+    background-color: lighten($refresh-blue, 10);
+    border: 3px solid lighten($refresh-blue, 10);
+  }
+
 }

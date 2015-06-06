@@ -1,0 +1,15 @@
+.next-up {
+  @include outer-container;
+
+  .title--primary {
+    text-align: center;
+  }
+
+  .event--speaker-name {
+    margin-top: 1em;
+  }
+}
+
+.next-up--event {
+  @include span-columns(3);
+}

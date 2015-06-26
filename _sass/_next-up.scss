@@ -11,5 +11,12 @@
 }
 
 .next-up--event {
-  @include span-columns(3);
+  @include media(min-width rem(450) max-width rem(800)) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media(rem(800)) {
+    @include span-columns(3);
+  }
 }

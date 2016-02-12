@@ -1,58 +1,3 @@
----
-  month: January
-  date: 14th
-  event-url: "http://refreshphilly.ticketleap.com/20160114/"
-  speaker: Matthew Morton
-  speaker-twitter: MortyNorts
-  speaker-photo: https://pbs.twimg.com/profile_images/455526430063874048/NA2N2aPM.jpeg
-  speaker-bio: UX Designer at Amazon. I make things for people to play with.
-  title: "Working Backwards: UX Design at Amazon"
-  description: |
-    Matt, a user experience designer at Amazon will talk about Amazon’s ux design process, including; pre-sales/prototyping, sold work, custom work, and production/workflow. He’ll also describe their unique approach to Human Interface Guidelines and how they are manifested in the Amazon UI.
-
-  month-2: February
-  date-2: 11th
-  event-url-2: "http://refreshphilly.ticketleap.com/20160211/"
-  speaker-2: Sylvester Mobley
-  speaker-twitter-2: sylvestermobley
-  speaker-photo-2: https://pbs.twimg.com/profile_images/633070091278544896/RQHRntVw.jpg
-  speaker-bio-2:
-  title-2:
-  description-2:
-
-  month-3: March
-  date-3: 10th
-  event-url-3: "http://refreshphilly.ticketleap.com/20160310/"
-  speaker-3: Jason Cranford Teague
-  speaker-twitter-3: JasonSpeaking
-  speaker-photo-3: https://pbs.twimg.com/profile_images/660651680208433152/8bXYV1gT_400x400.jpg
-  speaker-bio-3: |
-     wJason Cranford Teague is a web designer and author. He designed Computer-Mediated Communications Magazine, the first online magazine, in 1994.
-  title-3:
-  description-3:
-
-  month-4: April
-  date-4: 14th
-  event-url-4: "http://refreshphilly.ticketleap.com/20160414/"
-  speaker-4: Victor Yocco
-  speaker-twitter-4: VictorYocco
-  speaker-photo-4: https://pbs.twimg.com/profile_images/562939248517468160/2jHd1q4M_400x400.jpeg
-  speaker-bio-4:
-  title-4:
-  description-4:
-
-  month-5: May
-  date-5: 12th
-  event-url-5:
-  speaker-5: TBD
-  speaker-twitter-5: 
-  speaker-photo-5:
-  speaker-bio-5:
-  title-5:
-  description-5:
-
----
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -101,75 +46,9 @@
           <li><a href="//www.flickr.com/photos/tags/refreshphilly/" class="flickr">Flickr</a></li>
         </ul>
       </nav>
+
+      <a href="http://refreshphilly.ticketleap.com/" class="register">See our upcoming events</a>
     </header>
-
-    <hr />
-
-    <section class="next-event">
-      <div class="event--speaker-image">
-        <img src="{{ page.speaker-photo }}" alt="{{ page.speaker }}" />
-      </div>
-
-      <div class="talk-info">
-        <h1 class="title--primary">{{ page.month }} Meeting</h1>
-        <h2 class="event--title"><a href="{{page.event-url}}">{{ page.title }}</a></h2>
-        <div class="event--description">
-          <p>{{ page.description }}</p>
-          <p>Come early for some food and refreshments sponsored by <a href="http://thoughtbot.com">thoughtbot</a>.</p>
-        </div>
-
-        <div class="event--speaker">
-          <h3 class="event--speaker-name"><a href="//twitter.com/{{ page.speaker-twitter }}">{{ page.speaker }}</a></h3>
-          <p>{{ page.speaker-bio }}</p>
-        </div>
-
-        <div class="event--details">
-          <h4 class="event--date">Thursday, {{ page.month }} {{ page.date }} @ 6:30pm</h4>
-          <a href="https://goo.gl/maps/pJWi2" class="event--location">
-            URBN Center Annex,
-            <span>3527 Filbert St, Philadelphia</span>
-          </a>
-        </div>
-
-        <a href="{{ page.event-url }}" class="register">Register</a>
-      </div>
-    </section>
-
-    <hr />
-
-    <section class="next-up">
-      <h1 class="title--primary">Coming soon</h1>
-
-      <ol>
-        <li class="next-up--event">
-          <h2 class="event--date">{{page.month-2}} {{page.date-2}}</h2>
-          <img src="{{page.speaker-photo-2}}" alt="" />
-          <h3 class="event--speaker-name"><a href="https://twitter.com/{{page.speaker-twitter-2}}">{{page.speaker-2}}</a></h3>
-          <a href="{{page.event-url-2}}">Register</a>
-        </li>
-
-        <li class="next-up--event">
-          <h2 class="event--date">{{page.month-3}} {{page.date-3}}</h2>
-          <img src="{{page.speaker-photo-3}}" alt="" />
-          <h3 class="event--speaker-name"><a href="https://twitter.com/{{page.speaker-twitter-3}}">{{page.speaker-3}}</a></h3>
-          <a href="{{page.event-url-3}}">Register</a>
-        </li>
-
-        <li class="next-up--event">
-          <h2 class="event--date">{{page.month-4}} {{page.date-4}}</h2>
-          <img src="{{page.speaker-photo-4}}" alt="" />
-          <h3 class="event--speaker-name"><a href="https://twitter.com/{{page.speaker-twitter-4}}">{{page.speaker-4}}</a></h3>
-          <a href="{{page.event-url-4}}">Register</a>
-        </li>
-
-        <li class="next-up--event">
-          <h2 class="event--date">{{page.month-5}} {{page.date-5}}</h2>
-          <img src="{{page.speaker-photo-5}}" alt="" />
-          <h3 class="event--speaker-name"><a href="https://twitter.com/{{page.speaker-twitter-5}}">{{page.speaker-5}}</a></h3>
-          <a href="{{page.event-url-5}}">Register</a>
-        </li>
-      </ol>
-    </section>
 
     <hr />
 
@@ -180,10 +59,6 @@
         <li class="drexel">
           <a href="//digm.drexel.edu">Drexel</a>
         </li>
-
-        <li class="thoughtbot">
-          <a href="//thoughtbot.com">thoughtbot</a>
-        </li>
       </ul>
     </section>
 
@@ -191,16 +66,15 @@
 
     <footer>
       <nav>
-        <a href="{{ page.event-url }}" class="register">Register For Our Next Event</a>
 
         <div class="contact">
           <h2>Email us to:</h2>
-          <a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Speak at Refresh" class="contact--button">Be a speaker</a>
-          <a href="mailto:kyle+refreshphilly@thoughtbot.com?subject=I'd Like to Sponsor Refresh" class="contact--button">Be a sponsor</a>
+          <a href="mailto:troy.finamore@drexel.edu?subject=I'd Like to Speak at Refresh" class="contact--button">Be a speaker</a>
+          <a href="mailto:troy.finamore@drexel.edu?subject=I'd Like to Sponsor Refresh" class="contact--button">Be a sponsor</a>
         </div>
       </nav>
 
-      <p>Refresh Philly is run by <a href="//twitter.com/findes">@findes</a> and <a href="//twitter.com/kylefiedler">@kylefiedler</a></p>
+      <p>Refresh Philly is run by <a href="//twitter.com/findes">@findes</a></p>
       <p>Please read our <a href="/code-of-conduct">code of conduct</a>.</p>
     </footer>
   </body>

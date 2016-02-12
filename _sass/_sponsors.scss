@@ -17,19 +17,7 @@
 
           @include media(em(550)) {
             @include size(em(438) em(149));
-            margin-right: 1em;
           }
-
-          @include media(em(630)){
-            margin-left: -70px;
-          }
-        }
-      }
-
-      &.thoughtbot {
-        a {
-          @include size(em(156));
-          background-image: url("../images/thoughtbot.svg");
         }
       }
 

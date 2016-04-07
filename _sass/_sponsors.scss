@@ -1,4 +1,4 @@
-.sponsors {
+ .sponsors {
   text-align: center;
 
   ul {
@@ -13,12 +13,20 @@
 
         a {
           @include size(100% em(149));
-          background-image: url("../images/drexel.svg");
 
           @include media(em(550)) {
             @include size(em(438) em(149));
           }
         }
+
+        .drexel a{
+          background-image: url("../images/drexel.svg");
+        }
+
+        .happy-cog a{
+          background-image: url("../images/HappyCogLogo.png");
+        }
+
       }
 
       a {

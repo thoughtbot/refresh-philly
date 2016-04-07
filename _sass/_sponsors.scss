@@ -1,40 +1,36 @@
- .sponsors {
+
+
+.sponsors {
   text-align: center;
 
   ul {
     li {
       vertical-align: middle;
-      display: inline-block;
+      display: block;
+      max-width: 445px;
+      margin: 0 auto;
 
-      &.drexel {
-        @include media(max-width em(550)) {
-          display: block;
-        }
-
-        a {
-          @include size(100% em(149));
-
-          @include media(em(550)) {
-            @include size(em(438) em(149));
-          }
-        }
-
-        .drexel a{
-          background-image: url("../images/drexel.svg");
-        }
-
-        .happy-cog a{
-          background-image: url("../images/HappyCogLogo.png");
-        }
-
+      &.drexel a{
+        background-image: url("../images/drexel.svg");
       }
+
+      &.happy-cog a{
+        background-image: url("../images/HappyCogLogo.png");
+      }
+
 
       a {
         @include hide-text();
         @include transition;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: auto 100%;
+        background-position: center;
         display: block;
+        @include size(100% em(149));
+
+        @include media(em(550)) {
+          @include size(em(438) em(149));
+        }
 
         &:hover {
           @include transition;
